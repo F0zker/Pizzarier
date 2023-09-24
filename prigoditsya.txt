@@ -1,0 +1,20 @@
+<style>
+        .column-x {
+            column-count: 3;
+        }
+
+
+        @media (max-width: 367px) {
+            .column-x  {
+                column-count: 3; 
+            }
+        }
+
+        @media (max-width: 540px) {
+            .column-x  {
+                column-count: 1; 
+            }
+        }
+
+
+    </style>

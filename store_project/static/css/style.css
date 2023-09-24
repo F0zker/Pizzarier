@@ -1,0 +1,17 @@
+a {
+    text-decoration: none;
+}
+
+.logo{
+    width: 50px;
+    border-radius: 100%;
+}
+
+.link-category{
+    color: black;
+}
+
+.footer {
+    min-height: 60px;
+
+}

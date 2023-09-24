@@ -1,0 +1,37 @@
+# Создаем виртуальное окружения
+"C:/Users/DARIJ PC/AppData/Local/Programs/Python/Python310/python.exe" -m venv venv
+
+# Активируем виртуальное окружение
+venv/scripts/activate
+
+# Обновляем пакетный менеджер
+python -m pip install --upgrade pip 
+
+# Устанавливаем фреймворк
+pip install django
+
+# Создаем проект
+django-admin startproject store_project
+
+# Заходим в папку проект
+cd store_project
+
+# Выйти
+cd..
+
+# Создаем приложение
+python manage.py startapp store
+
+# Создаем вспомогательные таблицы в базе данных
+python manage.py migrate
+
+# Запускаем сервер
+python manage.py runserver
+
+# при изменении структуры базы данных
+python manage.py makemigrations
+-
+python manage.py migrate
+
+# робота с изоброжениями
+pip install pillow

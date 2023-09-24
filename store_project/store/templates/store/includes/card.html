@@ -1,0 +1,9 @@
+<div class="card mb-3 col-lg-4 col-md-6 col-sm-12">
+    <img src="{{ product.image.url }}" class="card-img-top" alt="Pizza">
+    <div class="card-body">
+        <h5 class="card-title">{{ product.title }}</h5>
+        <p class="card-text">{{ product.info| truncatewords:10 }}</p>
+        <p class="card-text">Price: ${{ product.price }}</p>
+        <a href="{{ product.get_absolute_url }}"class="btn btn-primary"> More informaion </a>
+    </div>
+</div>
